@@ -6,7 +6,6 @@
     --grey: #a3a3a3;
 }
 
-
 /* CSS RESET */
 *{
     margin: 0;
@@ -28,7 +27,11 @@ a{
 
 h2{
     color: var(--white);
+}
 
+p{
+    color: var(--grey);
+    font-size: 12px;
 }
 
 img{
@@ -65,10 +68,6 @@ img{
     font-size: 12px;
 }
 
-
-
-
-
 /* ! MAIN */
 /*?DIV CONTENT */
 .content{
@@ -101,7 +100,7 @@ header{
     justify-content: flex-end;
     align-items: center;
     min-height: 50px;
-    background-color: goldenrod;
+    background-color: var(--black);
     width: calc(100% - 200px);
     position: fixed;
     top: 0;
@@ -109,7 +108,7 @@ header{
 }
 
 nav ul{
-    font-size: 15px;
+    font-size: 13px;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
@@ -157,10 +156,37 @@ nav a{
 .created-for{
     display: flex;
     flex-wrap: wrap;
-    
+    margin-bottom: 20px;
 }
 
 .created-for .card{
+    flex-basis: calc(100% / 6 - 20px) ;
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.card p:nth-child(2){
+    color: var(--white);
+    font-size: 15px;
+    font-weight: 600;
+    margin: 10px 0px 10px 0px;
+}
+
+.card p:nth-child(3){
+    color: var(--grey);
+    font-size: 12px;
+    font-weight: 500;
+}
+
+/*? POPOLAR */
+.popolar{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.popolar .card{
     flex-basis: calc(100% / 6 - 20px) ;
     text-align: center;
     margin-left: 10px;
@@ -189,5 +215,5 @@ footer{
     width: 100%;
     height: 100px;
     background-color: red;
-    
 }
+
