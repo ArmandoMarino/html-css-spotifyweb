@@ -4,3 +4,55 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+/* GENERICS */
+
+
+
+
+
+
+
+/* SIDE-BAR */
+.side-bar{
+    width: 250px;
+    background-color: green;
+    height: calc(100vh - 100px);
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+/* HEADER */
+header{
+    min-height: 50px;
+    background-color: yellow;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    
+}
+
+
+/* MAIN */
+main{
+    margin-left: 250px;
+    background-color: red;
+    padding-top: 50px;
+}
+
+
+.page{
+    height: calc(100vh - 150px);
+    background-color: blue;
+    overflow-y: auto;
+}
+
+
+
+/* FOOTER */
+footer{
+    height: 100px;
+    background-color: red;
+    
+}
