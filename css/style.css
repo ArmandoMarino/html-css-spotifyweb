@@ -223,7 +223,7 @@ footer{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    min-width: 300px;
+    min-width: 200px;
 }
 
 .left-controls .left-card{
@@ -234,6 +234,8 @@ footer{
 .left-controls .right-card{
     width: 30%;
     display: flex;
+    justify-content: flex-end;
+    gap: 10px;
 }
 
 .current-song{
@@ -243,6 +245,6 @@ footer{
 
 .txt-song{
     color:var(--white);
-    font-size: 14px;
+    font-size: 10px;
     padding: 5px;
 }
