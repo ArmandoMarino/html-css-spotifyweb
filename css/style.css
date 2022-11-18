@@ -1,5 +1,9 @@
 :root{
-    --white: #141922;
+    --white: #fff;
+    --black: #080b12;
+    --dark-grey: #141922;
+    
+    --grey: #a3a3a3;
 }
 
 
@@ -8,6 +12,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
 }
 
 /* GENERICS */
@@ -18,25 +23,46 @@ ul{
 a{
     text-decoration: none;
     padding: 5px 10px;
+    color: #fff;
+}
+
+h2{
+    color: var(--white);
+
 }
 
 img{
     width: 100%;
     display: block;
 }
+
 /* UTILITY */
 .flex{
     display: flex;
+}
+
+.mg-l10{
+    margin-left: 10px;
+}
+
+.mg-b20{
+    margin-bottom: 20px;
+}
+
+.mg-b10{
+    margin-bottom: 10px;
 }
 
 /* BUTTONS */
 .btn{
     border: 2px solid #fff;
     border-radius: 20px;
-    min-width: 50px;
-    min-height: 20px;
-    
+    text-align: center;
     padding: 10px;
+    margin-right: 20px;
+    width: 200px;
+    height: 40px;
+    font-size: 12px;
 }
 
 
@@ -53,6 +79,7 @@ img{
     height: calc(100vh - 150px);
     background-color: blue;
     margin-left: 200px;
+    background-color: #141922;
     
 }
 
@@ -70,29 +97,88 @@ img{
 
 /*? HEADER */
 header{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
     min-height: 50px;
-    background-color: yellow;
-    width: 100%;
+    background-color: goldenrod;
+    width: calc(100% - 200px);
     position: fixed;
     top: 0;
     left: 200px;
 }
 
+nav ul{
+    font-size: 15px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    min-height: 50px;
+    width: 100%;
+    color: var(--grey);
+}
 
+nav li{
+    border-bottom: #141922 solid 2px;
+}
+
+nav a{
+    color: var(--grey);
+}
+
+/*? RECENTLY-PLAYED */
 .recently{
     display: flex;
     flex-wrap: wrap;
-    
+    margin-bottom: 20px;
 }
 
-
-.card{
+.recently .card{
     flex-basis: calc(100% / 6 - 20px) ;
     text-align: center;
     margin-left: 10px;
     margin-right: 10px;
 }
 
+.card p:nth-child(2){
+    color: var(--white);
+    font-size: 15px;
+    font-weight: 600;
+    margin: 10px 0px 10px 0px;
+}
+
+.card p:nth-child(3){
+    color: var(--grey);
+    font-size: 12px;
+    font-weight: 500;
+}
+
+/*? CREATED-FOR */
+.created-for{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.created-for .card{
+    flex-basis: calc(100% / 6 - 20px) ;
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.card p:nth-child(2){
+    color: var(--white);
+    font-size: 15px;
+    font-weight: 600;
+    margin: 10px 0px 10px 0px;
+}
+
+.card p:nth-child(3){
+    color: var(--grey);
+    font-size: 12px;
+    font-weight: 500;
+}
 
 
 /*? FOOTER */

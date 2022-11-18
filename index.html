@@ -7,6 +7,10 @@
     <title>Document</title>
     <!-- FONTAWESOME -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <!-- STYLE -->
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -31,8 +35,8 @@
                 </div>
             </header>
             <!-- NAVBAR -->
-            <nav>
-                <ul>
+            <nav class="flex">
+                <ul class="flex">
                     <li><a href="#">IN EVIDENZA</a></li>
                     <li><a href="#">PODCAST</a></li>
                     <li><a href="#">CLASSIFICHE</a></li>
@@ -43,7 +47,7 @@
             </nav>
 
             <!-- RECENTLY-PLAYED -->
-            <h2>Recently played</h2>
+            <h2 class="mg-l10 mg-b20">Recently played</h2>
             <div class="recently">
                 <div class="card">
                     <figure><img src="img/metal_lifting.jpg" alt=""></figure>
@@ -80,7 +84,23 @@
                     <p>Heavy Metal</p>
                     <p>Subtitle</p>
                 </div>
+            </div>
 
+                <!-- CREATED-FOR -->
+                <h2 class="mg-l10 mg-b10">Creato per John Doe</h2>
+                <p class="mg-l10 mg-b10">Più ascolti, più accurati saranno i suggerimenti.</p>
+            <div class="created-for">
+                <div class="card">
+                    <figure><img src="img/metal_lifting.jpg" alt=""></figure>
+                    <p>Heavy Metal</p>
+                    <p>Subtitle</p>
+                </div>
+
+                <div class="card">
+                    <figure><img src="img/metal_lifting.jpg" alt=""></figure>
+                    <p>Heavy Metal</p>
+                    <p>Subtitle</p>
+                </div>
             </div>
         </div>
     </main>
