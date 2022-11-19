@@ -91,7 +91,31 @@ img{
     left: 0;
     right: 0;
     z-index: 1;
+    padding-left: 30px;
 }
+
+#logo{
+    width: 120px;
+    margin-top: 5px;
+}
+
+.icons-side{
+    float: left;
+    width: 20px;
+    clear: both;
+    
+}
+
+.side-bar li{
+    margin-top: 10px;
+}
+
+.side-bar a{
+    padding: 0;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
 
 /*? HEADER */
 header{
@@ -224,6 +248,7 @@ footer{
     justify-content: space-between;
     align-items: center;
     min-width: 200px;
+    padding-left: 10px;
 }
 
 .left-controls .left-card{
@@ -236,6 +261,7 @@ footer{
     display: flex;
     justify-content: flex-end;
     gap: 10px;
+    color: var(--grey);
 }
 
 .current-song{
@@ -253,7 +279,7 @@ footer{
 .center-controls{
     display: flex;
     flex-direction: column;
-    flex-basis: calc(100% / 2);
+    flex-basis: calc(100% / 3);
 }
 
 .center-controls .top-card{
@@ -279,13 +305,38 @@ footer{
 }
 
 .progress-bar{
-    width: 90%;
+    width: 80%;
     height: 5px;
     background-color: var(--grey);
     border-radius: 20px;
 }
 
 .progress-bar .value{
+    width: 20%;
+    background-color: var(--white);
+    height: 5px;
+}
+
+/*? RIGHT-CONTROLS */
+.right-controls{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+    min-width: 200px;
+    font-size: 15px;
+    color: var(--grey);
+    padding-right: 10px;
+}
+
+.volume-bar{
+    height: 5px;
+    width: 30%;
+    border-radius: 20px;
+    background-color: var(--grey);
+}
+
+.volume-bar .value{
     width: 20%;
     background-color: var(--white);
     height: 5px;
