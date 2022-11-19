@@ -102,18 +102,20 @@ img{
 .icons-side{
     float: left;
     width: 20px;
-    clear: both;
-    
+    vertical-align: middle;
 }
 
 .side-bar li{
     margin-top: 10px;
 }
 
+.side-bar h3{
+    clear: both;
+}
+
 .side-bar a{
     padding: 0;
     margin-top: 10px;
-    margin-left: 10px;
 }
 
 
