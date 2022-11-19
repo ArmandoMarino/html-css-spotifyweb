@@ -111,12 +111,45 @@ img{
 
 .side-bar h3{
     clear: both;
+    margin-top: 20px;
 }
 
 .side-bar a{
     padding: 0;
     margin-top: 10px;
 }
+
+.top-card h3{
+    color: var(--white);
+}
+
+.profile{
+    width: 30px;
+    height: 30px;
+    float: left;
+    background-color: var(--grey);
+    border-radius: 50%;
+    background-image: url(../img/profile.svg);
+    background-position: 50% 50%;
+    background-size: contain;
+}
+
+.install{
+    border-bottom: var(--grey) solid 2px;
+    width: 90%;
+    margin-bottom: 10px;
+}
+
+.bottom-card span{
+    color: var(--grey);
+    font-size: 15px;
+}
+
+.bottom-card p{
+    margin-top: 1rem;
+    padding-left: 40px;
+}
+
 
 
 /*? HEADER */
@@ -232,13 +265,14 @@ nav a{
 }
 
 
-/*? FOOTER */
+/***********? FOOTER */
 footer{
     display: flex;
     justify-content: space-between;
     position: fixed;
     left: 0;
     right: 0;
+    z-index: 1;
     width: 100%;
     height: 100px;
     background-color: red;
