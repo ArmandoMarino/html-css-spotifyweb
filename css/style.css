@@ -253,7 +253,7 @@ footer{
 .center-controls{
     display: flex;
     flex-direction: column;
-    min-width: 400px;
+    flex-basis: calc(100% / 2);
 }
 
 .center-controls .top-card{
@@ -262,14 +262,31 @@ footer{
     justify-content: center;
     align-items: center;
     gap: 30px;
+    margin-top: 10px;
     font-size: 20px;
     color: #ffffff;
 }
 
 .center-controls .bottom-card{
+    display: flex;
+    flex-basis: 50%;
 
+    justify-content: space-between;
+    align-items: center;
+
+    color: var(--white);
+    font-size: 10px;
 }
 
-.song-bar{
+.progress-bar{
+    width: 90%;
+    height: 5px;
+    background-color: var(--grey);
+    border-radius: 20px;
+}
 
+.progress-bar .value{
+    width: 20%;
+    background-color: var(--white);
+    height: 5px;
 }
