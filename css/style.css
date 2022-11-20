@@ -79,7 +79,6 @@ img{
     background-color: blue;
     margin-left: 200px;
     background-color: #141922;
-    
 }
 
 /*? SIDE-BAR */
@@ -104,10 +103,19 @@ img{
     margin-top: 5px;
 }
 
+#logo-small{
+    width: 50px;
+    margin-top: 5px;
+    display: none;
+}
+
 .icons-side{
-    float: left;
     width: 20px;
     vertical-align: middle;
+}
+
+.top-card .normal{
+    display: flex;
 }
 
 .side-bar li{
@@ -115,17 +123,28 @@ img{
 }
 
 .side-bar h3{
-    clear: both;
     margin-top: 20px;
-}
-
-.side-bar a{
-    padding: 0;
-    margin-top: 10px;
 }
 
 .top-card h3{
     color: var(--white);
+}
+
+.playlist li a{
+    padding: 0;
+}
+
+.playlist li:first-child{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    
+}
+
+.playlist li span:first-child{
+    color: var(--grey);
+    font-size: 40px;
 }
 
 .profile{
@@ -143,6 +162,8 @@ img{
     border-bottom: var(--grey) solid 2px;
     width: 90%;
     margin-bottom: 10px;
+    display: flex;
+    gap: 5px;
 }
 
 .bottom-card span{
@@ -155,6 +176,13 @@ img{
     padding-left: 40px;
 }
 
+/********** MOBILE ICONS SIDE-BAR */
+
+.mobile{
+    display: none;
+}
+
+/* ****************************** */
 
 
 /*? HEADER */
@@ -288,7 +316,7 @@ footer{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    min-width: 200px;
+    width: 200px;
     padding-left: 10px;
 }
 
@@ -415,5 +443,16 @@ footer{
 }
 
 @media screen and (max-width: 480px) {
-    
+    .content{
+        margin-left: 50px;
+    }
+
+    .side-bar{
+        width: 50px;
+    }
+
+    header{
+        width: calc(100% - 50px);
+        left: 50px;
+    }
 }
