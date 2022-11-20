@@ -65,11 +65,17 @@ img{
     border: 2px solid #fff;
     border-radius: 20px;
     text-align: center;
-    padding: 10px;
+    padding: 5px;
     margin-right: 20px;
     width: 200px;
-    height: 40px;
+    height: 30px;
     font-size: 12px;
+    cursor: pointer;
+}
+
+.btn:hover{
+    height: 40px;
+    padding: 10px;
 }
 
 /* ! MAIN ************************/
@@ -377,6 +383,11 @@ footer{
     color: var(--grey);
 }
 
+.left-controls .right-card span:hover{
+    color: var(--white);
+    cursor: pointer;
+}
+
 .current-song{
     width: 50px;
     height: 50px;
@@ -406,6 +417,12 @@ footer{
     justify-content: space-between;
 }
 
+.center-controls .top-card span:hover{
+    cursor: pointer;
+    font-size: 20px;
+}
+
+
 .center-controls .bottom-card{
     display: flex;
     flex-basis: 50%;
@@ -427,13 +444,39 @@ footer{
     height: 5px;
     background-color: var(--grey);
     border-radius: 20px;
+    cursor: pointer;
 }
 
 .progress-bar .value{
     width: 20%;
     background-color: var(--white);
     height: 5px;
+    position: relative;
+    border-radius: 20px;
 }
+
+/* MARKER PROGRESS-BAR SONG */
+.bottom-card .value .marker{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: goldenrod;
+    position: absolute;
+    top: -50%;
+    right: 0;
+    display: none;
+}
+
+.progress-bar:hover .marker{
+    display: block;
+}
+
+.center-controls:hover .progress-bar .marker{
+    display: block;
+}
+/* .top-card span:hover .marker{
+    display: block;
+} */
 
 /*? RIGHT-CONTROLS */
 .right-controls{
@@ -446,18 +489,48 @@ footer{
     margin-right: 5px;
 }
 
+.right-controls span:hover{
+    cursor: pointer;
+    color: var(--white);
+}
+
+.icon-volume:hover .progress-bar .marker{
+    display: block;
+}
+
 .volume-bar{
     height: 5px;
     width: 30%;
     border-radius: 20px;
     background-color: var(--grey);
+    cursor: pointer;
 }
 
 .volume-bar .value{
     width: 20%;
     background-color: var(--white);
     height: 5px;
+    position: relative;
+    border-radius: 20px;
 }
+
+/* MARKER PROGRESS-BAR VOLUME */
+.volume-bar .value .marker{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: goldenrod;
+    position: absolute;
+    top: -50%;
+    right: 0;
+    display: none;
+}
+
+.volume-bar:hover .marker{
+    display: block;
+}
+
+
 
 /*! MEDIA QUERY **********************/
 @media screen and (max-width: 768px) {
@@ -476,6 +549,7 @@ footer{
 
 
 @media screen and (max-width: 576px) {
+    
     .recently .card{
         flex-basis: calc(100% / 2 - 20px);
     }
