@@ -22,7 +22,11 @@ ul{
 a{
     text-decoration: none;
     padding: 5px 10px;
-    color: #fff;
+    color: var(--grey);
+}
+
+a:hover{
+    color: var(--white);
 }
 
 h2{
@@ -147,10 +151,22 @@ img{
     font-size: 40px;
 }
 
-.profile{
+.playlist li span:first-child:hover{
+    color: var(--white);
+    cursor: pointer;
+}
+
+
+.bottom-card .profile{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+}
+
+.profile-img{
     width: 30px;
     height: 30px;
-    float: left;
     background-color: var(--grey);
     border-radius: 50%;
     background-image: url(../img/profile.svg);
@@ -166,14 +182,14 @@ img{
     gap: 5px;
 }
 
+.install > *:hover{
+    color: var(--white);
+    cursor: pointer;
+}
+
 .bottom-card span{
     color: var(--grey);
     font-size: 15px;
-}
-
-.bottom-card p{
-    margin-top: 1rem;
-    padding-left: 40px;
 }
 
 /********** MOBILE ICONS SIDE-BAR */
@@ -316,8 +332,8 @@ footer{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 200px;
     padding-left: 10px;
+    flex-basis: calc(100% / 5);
 }
 
 .left-controls .left-card{
@@ -396,11 +412,10 @@ footer{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
-    width: 200px;
-    font-size: 15px;
+    padding-left: 10px;
+    flex-basis: calc(100% / 5);
     color: var(--grey);
-    padding-right: 10px;
+    margin-right: 5px;
 }
 
 .volume-bar{
@@ -439,6 +454,10 @@ footer{
     }
     .popolar .card{
         flex-basis: calc(100% / 2 - 20px);
+    }
+
+    footer{
+
     }
 }
 
