@@ -81,7 +81,6 @@ img{
 /* ! MAIN ************************/
 /*?DIV CONTENT */
 .content{
-    margin-left: ;
     background-color: brown;
     margin-top: 50px;
     overflow-y: auto;
@@ -474,9 +473,6 @@ footer{
 .center-controls:hover .progress-bar .marker{
     display: block;
 }
-/* .top-card span:hover .marker{
-    display: block;
-} */
 
 /*? RIGHT-CONTROLS */
 .right-controls{
