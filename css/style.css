@@ -494,10 +494,6 @@ footer{
     color: var(--white);
 }
 
-.icon-volume:hover .progress-bar .marker{
-    display: block;
-}
-
 .volume-bar{
     height: 5px;
     width: 30%;
