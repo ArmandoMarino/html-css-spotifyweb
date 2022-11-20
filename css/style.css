@@ -446,9 +446,53 @@ footer{
     .content{
         margin-left: 50px;
     }
-
+    /* SIDE-BAR */
     .side-bar{
         width: 50px;
+        padding-left: 0;
+    }
+
+    #logo{
+        display: none;
+    }
+
+    #logo-small{
+        width: 30px;
+        display: inline-block;
+    }
+
+    .side-bar .top-card{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .side-bar a{
+       padding: 0;
+    }
+
+    .side-bar .normal{
+        display: none;
+    }
+
+    .side-bar .mobile{
+        display: inline-block;
+    }
+    
+    .side-bar .bottom-card{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    
+    .playlist{
+        display: none;
+    }
+
+    .install{
+        display: none;
     }
 
     header{
