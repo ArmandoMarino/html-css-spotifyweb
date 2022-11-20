@@ -233,6 +233,34 @@ nav a{
 }
 
 /*? RECENTLY-PLAYED */
+/** HOVER ALL CARDS PLAY */
+
+figure{
+    position: relative;
+}
+
+figure:hover::after{
+    position: absolute;
+    right: 0;
+    top: 0;
+    left: 0;
+    bottom: 0;
+
+    background-color: rgba(0, 0, 0, 0.5);
+    font-family: "Font Awesome 5 Free";
+    font-weight: 400;
+    content: "\f144";
+    color: var(--white);
+    font-size: 50px;
+    
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/****************** *** */
+
 .recently{
     display: flex;
     flex-wrap: wrap;
@@ -442,6 +470,8 @@ footer{
     .popolar .card{
         flex-basis: calc(100% / 4 - 20px);
     }
+
+    
 }
 
 
@@ -456,8 +486,16 @@ footer{
         flex-basis: calc(100% / 2 - 20px);
     }
 
-    footer{
+    .left-controls{
+        flex-basis: calc(100% / 3 * 2);
+    }
 
+    .center-controls{
+        flex-basis: calc(100% / 3 * 2);
+    }
+
+    .right-controls{
+        flex-basis: calc(100% / 3 * 2);
     }
 }
 
