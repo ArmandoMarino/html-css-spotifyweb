@@ -105,6 +105,7 @@ img{
     flex-direction: column;
     justify-content: space-between;
     padding-bottom: 10px;
+    overflow: auto;
 }
 
 #logo{
@@ -367,7 +368,8 @@ footer{
     justify-content: space-between;
     align-items: center;
     padding-left: 10px;
-    flex-basis: calc(100% / 5);
+    /* flex-basis: calc(100% / 5); */
+    flex: 0 0 200px;
 }
 
 .left-controls .left-card{
@@ -403,7 +405,7 @@ footer{
 .center-controls{
     display: flex;
     flex-direction: column;
-    flex-basis: calc(100% / 3);
+    flex: 0 0 300px;
 }
 
 .center-controls .top-card{
@@ -481,7 +483,7 @@ footer{
     justify-content: space-between;
     align-items: center;
     padding-left: 10px;
-    flex-basis: calc(100% / 5);
+    flex: 0 0 200px;
     color: var(--grey);
     margin-right: 5px;
 }
@@ -538,6 +540,20 @@ footer{
     }
 
     
+    .left-controls{
+        flex: 0 0 150px;
+
+    }
+
+    .center-controls{
+        flex: 0 0 200px;
+
+    }
+
+    .right-controls{
+        flex: 0 0 150px;
+
+    }
 }
 
 
@@ -554,15 +570,15 @@ footer{
     }
 
     .left-controls{
-        flex-basis: calc(100% / 3 * 2);
+        flex: 0 0 150px;
     }
 
     .center-controls{
-        flex-basis: calc(100% / 3 * 2);
+        flex: 0 0 200px;
     }
 
     .right-controls{
-        flex-basis: calc(100% / 3 * 2);
+        flex: 0 0 150px;
     }
 }
 
@@ -619,8 +635,15 @@ footer{
         display: none;
     }
 
-    header{
-        width: calc(100% - 50px);
-        left: 50px;
+    .left-controls{
+        flex: 0 0 100px;
+    }
+
+    .center-controls{
+        flex: 0 0 150px;
+    }
+
+    .right-controls{
+        flex: 0 0 100px;
     }
 }
