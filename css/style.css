@@ -373,7 +373,6 @@ footer{
     justify-content: space-between;
     align-items: center;
     padding-left: 10px;
-    /* flex-basis: calc(100% / 5); */
     flex: 0 0 200px;
 }
 
