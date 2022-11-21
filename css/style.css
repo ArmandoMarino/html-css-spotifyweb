@@ -71,6 +71,7 @@ img{
     height: 30px;
     font-size: 12px;
     cursor: pointer;
+    background-color: var(--black);
 }
 
 .btn:hover{
@@ -82,9 +83,8 @@ img{
 /*?DIV CONTENT */
 .content{
     background-color: brown;
-    margin-top: 50px;
     overflow-y: auto;
-    height: calc(100vh - 150px);
+    height: calc(100vh - 100px);
     background-color: blue;
     margin-left: 200px;
     background-color: #141922;
@@ -212,11 +212,12 @@ header{
     justify-content: flex-end;
     align-items: center;
     min-height: 50px;
-    background-color: var(--black);
-    width: calc(100% - 200px);
-    position: fixed;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    position: sticky;
     top: 0;
     left: 200px;
+    z-index: 1;
 }
 
 nav ul{
